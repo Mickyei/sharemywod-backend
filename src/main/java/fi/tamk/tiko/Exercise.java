@@ -16,6 +16,7 @@ public class Exercise {
     private String value;
     private String name;
     private int sets;
+    private String additionalInfo;
 
     public int getSets() {
         return sets;
@@ -77,6 +78,14 @@ public class Exercise {
 
     public Exercise() {
         workout = new Workout();
+    }
+
+    public String getAdditionalInfo() {
+        return additionalInfo;
+    }
+
+    public void setAdditionalInfo(String additionalInfo) {
+        this.additionalInfo = additionalInfo;
     }
 
     @Override
